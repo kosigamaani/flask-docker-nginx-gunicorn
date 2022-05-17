@@ -26,7 +26,7 @@ RUN rm /etc/nginx/sites-enabled/default
 
 RUN whoami
 
-RUN service nginx start
+RUN nginx -t
 
 RUN ls -lrt
 
